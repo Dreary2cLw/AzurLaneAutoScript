@@ -321,6 +321,7 @@ Opsi:
       - OpsiFleet
     OpsiHazard1Leveling:
       - Scheduler
+      - HigherPriority
       - OpsiHazard1Leveling
       - OpsiFleet
     OpsiCrossMonth:
@@ -342,8 +343,8 @@ Tool:
       - AzurLaneUncensored
     GameManager:
       - GameManager
-      - GGHandler
-      - PowerLimit
-    SomethingSpecial:
-      - InfiniteDelay
-      - TurnOffForcedOnSettings
+    #  - GGHandler
+    #  - PowerLimit
+  #  SomethingSpecial:
+    #  - InfiniteDelay
+    #  - TurnOffForcedOnSettings
