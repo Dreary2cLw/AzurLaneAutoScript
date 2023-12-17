@@ -708,45 +708,6 @@ AzurLaneUncensored:
 GameManager:
   AutoRestart: true
 
-GGHandler:
-  Enabled: false
-  GGMethod:
-    value: u2
-    option: [ u2 ]
-  RestartATX: false
-  GGPackageName: com.
-  AutoRestartGG: false
-  RestartEverytime:
-    value: true
-#    display: disabled
-  RepushLua: true
-  GGMultiplyingFactor: 200
-  Timeout: 120
-  DisabledTask:
-    value: disable_all_dangerous_task
-    option: [
-      disable_all_dangerous_task,
-      disable_guild_and_dangerous,
-      disable_exercise,
-      enable_all,
-    ]
-PowerLimit:
-  Exercise: 16500
-  Raid: 16500
-  Ash: 16500
-
-InfiniteDelay:
-  Commission:
-    value: false
-  Research:
-    value: false
-  Reward:
-    value: false
-TurnOffForcedOnSettings:
-  OpsiMeowfficerFarmingFromOpsiHazard1Leveling:
-    value: false
-  OpsiHazard1LevelingYellowCoinLimit:
-    value: false
 
 
 # ==================== Dashboard ====================

@@ -9659,6 +9659,12 @@
         "type": "checkbox",
         "value": true
       }
+    },
+    "Storage": {
+      "type": "storage",
+      "value": {},
+      "valuetype": "ignore",
+      "display": "disabled"
     }
   },
   "Dashboard": {

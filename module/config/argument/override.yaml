@@ -437,10 +437,6 @@ OpsiHazard1Leveling:
   OpsiFleet:
     Submarine: false
 
-# ==================== GGHandler ====================
-GGHandler:
-  Timeout:
-    value: 120
 
 # ==================== Dashboard ====================
 Dashboard:

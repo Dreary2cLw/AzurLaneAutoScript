@@ -1957,40 +1957,6 @@
   "GameManager": {
     "GameManager": {
       "AutoRestart": true
-    },
-    "GGHandler": {
-      "Enabled": false,
-      "GGMethod": "u2",
-      "RestartATX": false,
-      "GGPackageName": "com.",
-      "AutoRestartGG": false,
-      "RestartEverytime": true,
-      "RepushLua": true,
-      "GGMultiplyingFactor": 200,
-      "Timeout": 120,
-      "DisabledTask": "disable_all_dangerous_task"
-    },
-    "PowerLimit": {
-      "Exercise": 16500,
-      "Raid": 16500,
-      "Ash": 16500
-    },
-    "Storage": {
-      "Storage": {}
-    }
-  },
-  "SomethingSpecial": {
-    "InfiniteDelay": {
-      "Commission": false,
-      "Research": false,
-      "Reward": false
-    },
-    "TurnOffForcedOnSettings": {
-      "OpsiMeowfficerFarmingFromOpsiHazard1Leveling": false,
-      "OpsiHazard1LevelingYellowCoinLimit": false
-    },
-    "Storage": {
-      "Storage": {}
     }
   },
   "Dashboard": {
