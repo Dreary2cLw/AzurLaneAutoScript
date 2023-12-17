@@ -1,62 +1,11 @@
-# Alas修改版，适用于云
+相比于源库增加了仪表盘
 
+提供了一个较为实用的仪表盘，感谢@MengNianxiaoyao 作出的美观调整
 
-## 相较于原版Alas
+![image](https://github.com/Zuosizhu/Alas-with-Dashboard/assets/60862861/ee2e3e8f-9a19-417e-8e5f-441ecdee1ae6)
 
+![image](https://github.com/Zuosizhu/Alas-with-Dashboard/assets/60862861/55f95cb3-5234-45d3-a265-6b5e0ab5fc3e)
 
-* 合并了一个奇怪的库
+![image](https://github.com/Zuosizhu/Alas-with-Dashboard/assets/60862861/6033931a-c4ea-4262-853f-f315f076d305)
 
-
-* 将GamePageUnknownError和RequestHumanTakeover写入重启，重启一次后再运行上次未完成的任务如果依旧报错则抛出错误并用OnePush通知(如果有设置OnePush的话)
-
-
-## 注意事项
-
-请勿开启在不小开情况下打不过的项目，防止资源浪费，特别是大世界的某些项目     
-         
- <br />
- 
- <br />
-
-# 小开特供版Alas：
-
-## 相较于原版Alas
-- 加入了`特别的东西`，可能有用？
-- 将`GamePageUnknownError`和`RequestHumanTakeover`写入重启，重启一次后再运行上次未完成的任务如果依旧报错则抛出错误并用OnePush通知(如果有设置OnePush的话)
-- 将`优化设置`中的`放慢截图速度至 X 秒一张`和`战斗中放慢截图速度至 X 秒一张`的时间限制分别从`0.1 ~ 0.3`和`0.1 ~ 1.0`放宽至`0.1 ~ 2.0`和`0.1 ~ 5.0`
-- 将`GameStuckError`中`无操作连续截图超过 1 分钟`放宽至`3 分钟`
-- 修复了在云端时由于网络延迟所导致的换装备时卡住(目前还在测试)
-- 修复了在云端时战术学院选择舰船时的bug(由于难以复现，目前还在观察测试)
-
-重启时，解决GG弹窗。
-
-可在Alas内配置的倍率小开。
-
-仪表盘。
-
-出现未知界面，直接重启。 
-
-敏感项目自动重启并以正常数据攻打。
-
-敏感项目，前排战力大于16500（可配置）强制重启。
-
-紧急委托前排可以选择更换为10级以上的驱逐舰。
-
-困难图可使用紧急委托功能3油刷D3。
-
-演习推迟功能，可以在演习更新次数前1小时再打，但在指定清空次数的时候一刷新次数就清空。
-
-  ## 使用方法：
-
-1，将alas库地址修改为本地址。
-
-2，在以下位置修改配置文件。
-
-![image](https://github.com/Zuosizhu/Alas-with-Dashboard/assets/60862861/5cabd341-d4bc-47c2-a7b2-fe2a7cd73e3b)
-
-3，GG明确表明蓝叠模拟器很慢。加上目前水平太菜无法解决蓝叠时常出现的UI Automator2无法使用的问题。加上蓝叠不能导入文件夹+本人网速极慢。因此若出现问题，不作任何支持。
-
-4，祝您使用AlasGG小开愉快。
-
-# Discord
-https://discord.gg/2NuruGzKkK
+![image](https://github.com/Zuosizhu/Alas-with-Dashboard/assets/60862861/6fafb159-2092-4423-9d58-3d6c1262e691)
