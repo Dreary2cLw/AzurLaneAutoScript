@@ -8296,7 +8296,8 @@
         "type": "select",
         "value": 2,
         "option": [
-          2
+          2,
+          3
         ]
       },
       "ShipIndex": {
@@ -8329,7 +8330,8 @@
         "option": [
           1,
           2,
-          3
+          3,
+          4
         ]
       },
       "ShipIndex": {
