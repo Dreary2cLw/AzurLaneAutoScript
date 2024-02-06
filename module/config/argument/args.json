@@ -9695,10 +9695,12 @@
       }
     },
     "Storage": {
-      "type": "storage",
-      "value": {},
-      "valuetype": "ignore",
-      "display": "disabled"
+      "Storage": {
+        "type": "storage",
+        "value": {},
+        "valuetype": "ignore",
+        "display": "disabled"
+      }
     }
   },
   "Dashboard": {
