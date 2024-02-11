@@ -98,9 +98,9 @@ class GGHandler:
         GGData(self.config).set_data(target='gg_enable', value=gg_enable)
         GGData(self.config).set_data(target='gg_auto', value=gg_auto)
         gg_data = GGData(self.config).get_data()
-        logger.info(f'GG status:')
-        logger.info(
-            f'Enabled={gg_data["gg_enable"]} AutoRestart={gg_data["gg_auto"]} Current stage={gg_data["gg_on"]}')
+        #logger.info(f'GG status:')
+        #logger.info(
+            #f'Enabled={gg_data["gg_enable"]} AutoRestart={gg_data["gg_auto"]} Current stage={gg_data["gg_on"]}')
         return gg_data
 
     def handle_u2_restart(self):
