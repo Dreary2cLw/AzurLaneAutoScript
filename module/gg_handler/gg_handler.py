@@ -168,7 +168,7 @@ class GGHandler:
         Forced final check before some dangerous tasks for cheaters.
         If power is too high, disable the multiplier and assume the user need GG to be Enabled before the other tasks.
         Args:
-            task: str = What task it is to limit power, default limit is 17000 for front ships.
+            task: str = What task it is to limit power, default limit is 18000 for front ships.
         """
         from module.gg_handler.assets import OCR_PRE_BATTLE_CHECK
         from module.ocr.ocr import Digit
@@ -176,10 +176,10 @@ class GGHandler:
         OCR_CHECK = Digit(OCR_PRE_BATTLE_CHECK, letter=(255, 255, 255), threshold=128)
         ocr = OCR_CHECK.ocr(self.device.image)
         from module.config.utils import deep_get
-        limit = deep_get(self.config.data, keys=f'GameManager.PowerLimit.{task}', default=17000)
-        logger.attr('Power Limit', limit)
+        limit = deep_get(self.config.data, keys=f'GameManager.PowerLimit.{task}', default=18000)
+        #logger.attr('Power Limit', limit)
         if ocr >= limit:
-            logger.critical('There''s high chance that GG is on, restart to disable it')
+            #logger.critical('There''s high chance that GG is on, restart to disable it')
             from module.gg_handler.gg_data import GGData
             GGData(self.config).set_data(target='gg_on', value=False)
             GGData(self.config).set_data(target='gg_enable', value=True)
