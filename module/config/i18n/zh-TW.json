@@ -417,7 +417,8 @@
       "aScreenCap_nc": "aScreenCap_nc",
       "DroidCast": "DroidCast",
       "DroidCast_raw": "DroidCast_raw",
-      "scrcpy": "scrcpy"
+      "scrcpy": "scrcpy",
+      "nemu_ipc": "nemu_ipc"
     },
     "ControlMethod": {
       "name": "模擬器控制方案",
@@ -426,7 +427,8 @@
       "uiautomator2": "uiautomator2",
       "minitouch": "minitouch",
       "Hermit": "Hermit",
-      "MaaTouch": "MaaTouch"
+      "MaaTouch": "MaaTouch",
+      "nemu_ipc": "nemu_ipc"
     },
     "ScreenshotDedithering": {
       "name": "去除圖片色彩抖動",
@@ -705,7 +707,7 @@
       "event_20210916_cn": "碧海光粼",
       "event_20211028_cn": "復刻穹頂下的聖詠曲",
       "event_20211028_tw": "復刻光與影的鳶尾之華",
-      "event_20211111_cn": "杰諾瓦的焰火",
+      "event_20211111_cn": "復刻杰諾瓦的焰火",
       "event_20211125_cn": "復刻-交匯世界的弧光",
       "event_20211229_cn": "逆轉彩虹之塔",
       "event_20220210_cn": "復刻北境序曲",
@@ -1140,28 +1142,6 @@
       "ship": "更換艦船",
       "ship_equip": "更換艦船 + 裝備"
     },
-    "ChangeVanguard": {
-      "name": "更換前排",
-      "help": "當前排紅臉時更換前排，選擇不更換則會強制紅臉出擊\n換前排通過找一艘心情不低於16、等級70的白鷹白船驅逐完成，所以盡量保證有足夠多的驅逐。國服則為等級100的白鷹白船驅逐。\n\n換裝備只會更換正在裝備中的欄位，即使是白裝也會更換。如果指定了旗艦，則會更換全部5個裝備，未指定旗艦隻會更換設備。",
-      "disabled": "不更换",
-      "ship": "更換艦船",
-      "ship_equip": "更換艦船 + 裝備"
-    },
-    "ALLowLowVanguardLevel": {
-      "name": "可更換低等級前排",
-      "help": "倍率打開時，前排等級限制改為10以上即可"
-    },
-    "FleetNumberInHardMode": {
-      "name": "GemsFarming.FleetNumberInHardMode.name",
-      "help": "GemsFarming.FleetNumberInHardMode.help",
-      "0": "0",
-      "1": "1",
-      "2": "2"
-    },
-    "StopIFAutoNotEnsured": {
-      "name": "GemsFarming.StopIFAutoNotEnsured.name",
-      "help": "GemsFarming.StopIFAutoNotEnsured.help"
-    },
     "CommonCV": {
       "name": "指定旗艦航母",
       "help": "",
@@ -1170,6 +1150,24 @@
       "bogue": "博格",
       "ranger": "突擊者",
       "hermes": "競技神"
+    },
+    "ChangeVanguard": {
+      "name": "更換前排",
+      "help": "當前排紅臉時更換前排，選擇不更換則會強制紅臉出擊\n換前排通過找一艘心情不低於16、等級70的白鷹白船驅逐完成，所以盡量保證有足夠多的驅逐。國服則為等級100的白鷹白船驅逐。\n\n換裝備只會更換正在裝備中的欄位，即使是白裝也會更換。如果指定了旗艦，則會更換全部5個裝備，未指定旗艦隻會更換設備。",
+      "disabled": "不更换",
+      "ship": "更換艦船",
+      "ship_equip": "更換艦船 + 裝備"
+    },
+    "StopIFAutoNotEnsured": {
+      "name": "GemsFarming.StopIFAutoNotEnsured.name",
+      "help": "GemsFarming.StopIFAutoNotEnsured.help"
+    },
+    "CommonDD": {
+      "name": "指定前排",
+      "help": "",
+      "any": "任意",
+      "aulick_or_foote": "奧利克或富特",
+      "cassin_or_downes": "卡辛或唐斯"
     },
     "CommissionLimit": {
       "name": "防止緊急委託數量過多",
@@ -2463,12 +2461,10 @@
     "DeviceType": {
       "name": "設備類型",
       "help": "",
-      "emulator": "模擬器 安卓<=9",
-      "emulator_android_12": "模擬器 安卓>9",
+      "emulator": "模擬器",
       "plone_cloud_with_adb": "雲手機 有公網ADB",
       "phone_cloud_without_adb": "雲手機 無公網ADB",
-      "android_phone": "安卓真機 安卓<=9",
-      "android_phone_12": "安卓真機 安卓>9",
+      "android_phone": "安卓真機",
       "android_phone_vmos": "安卓真機VMOS虛擬機"
     },
     "TestScene": {
@@ -2499,107 +2495,7 @@
       "help": "遊戲被強制結束後自動登錄遊戲"
     }
   },
-  "GGHandler": {
-    "_info": {
-      "name": "GG管理器",
-      "help": ""
-    },
-    "Enabled": {
-      "name": "啟用該功能",
-      "help": "注意事項！若GG打開則應該啟用該功能以達成防彈窗卡重啟\n只能使用指定的lua，會自動推送至/sdcard/Notes/Multiplier.lua\n演習，共鬥，Meta信標時會自動關閉倍率"
-    },
-    "GGMethod": {
-      "name": "GG操作方法",
-      "help": "推薦UiAutomator2，但未填寫包名時會使用截圖\n截圖相容性較差（已知逍遙模擬器無法使用）\n無法安裝UiAutomator2（如紅手指，vmos環境）時可嘗試使用\n使用截圖時，開啟模擬器後需要手動打開GG，將GG懸浮窗遮擋住石油圖標。 第一次使用還需要手動指定好lua路徑。",
-      "u2": "UiAutomator2"
-    },
-    "RestartATX": {
-      "name": "GGHandler.RestartATX.name",
-      "help": "GGHandler.RestartATX.help"
-    },
-    "GGPackageName": {
-      "name": "GG包名",
-      "help": "GG安裝後請自行前往/Android/Data資料夾查看包名，應是com.一串亂碼"
-    },
-    "AutoRestartGG": {
-      "name": "自動重啟GG",
-      "help": "是否在重啟後自動重啟倍率"
-    },
-    "RestartEverytime": {
-      "name": "每次啟動Alas時重啟",
-      "help": "打開以初始化倍率内容。 如果你沒有手動操作的壞習慣，可以關閉此選項"
-    },
-    "RepushLua": {
-      "name": "GGHandler.RepushLua.name",
-      "help": "GGHandler.RepushLua.help"
-    },
-    "GGMultiplyingFactor": {
-      "name": "倍率",
-      "help": "建議數值1-9999，沒做數位檢查，亂輸入後果自負"
-    },
-    "Timeout": {
-      "name": "GGHandler.Timeout.name",
-      "help": "GGHandler.Timeout.help"
-    },
-    "DisabledTask": {
-      "name": "禁用倍率的項目",
-      "help": "會關閉倍率的項目，建議全關。 打開的項目導致封號後果自負。\n所有，指演習，共鬥，Meta信標\n注意：戰力限制依舊生效。",
-      "disable_all_dangerous_task": "禁用所有敏感項目",
-      "disable_guild_and_dangerous": "禁用Meta和演習，大艦隊",
-      "disable_exercise": "禁用演習",
-      "enable_all": "百無禁忌"
-    }
-  },
-  "PowerLimit": {
-    "_info": {
-      "name": "戰力限制",
-      "help": "敏感項目前的最後一道保險\n若前排戰力高於此值強制重啟"
-    },
-    "Exercise": {
-      "name": "演習",
-      "help": ""
-    },
-    "Raid": {
-      "name": "共鬥",
-      "help": ""
-    },
-    "Ash": {
-      "name": "餘燼信標",
-      "help": ""
-    }
-  },
-  "InfiniteDelay": {
-    "_info": {
-      "name": "InfiniteDelay._info.name",
-      "help": "InfiniteDelay._info.help"
-    },
-    "Commission": {
-      "name": "InfiniteDelay.Commission.name",
-      "help": "InfiniteDelay.Commission.help"
-    },
-    "Research": {
-      "name": "InfiniteDelay.Research.name",
-      "help": "InfiniteDelay.Research.help"
-    },
-    "Reward": {
-      "name": "InfiniteDelay.Reward.name",
-      "help": "InfiniteDelay.Reward.help"
-    }
-  },
-  "TurnOffForcedOnSettings": {
-    "_info": {
-      "name": "TurnOffForcedOnSettings._info.name",
-      "help": "TurnOffForcedOnSettings._info.help"
-    },
-    "OpsiMeowfficerFarmingFromOpsiHazard1Leveling": {
-      "name": "TurnOffForcedOnSettings.OpsiMeowfficerFarmingFromOpsiHazard1Leveling.name",
-      "help": "TurnOffForcedOnSettings.OpsiMeowfficerFarmingFromOpsiHazard1Leveling.help"
-    },
-    "OpsiHazard1LevelingYellowCoinLimit": {
-      "name": "TurnOffForcedOnSettings.OpsiHazard1LevelingYellowCoinLimit.name",
-      "help": "TurnOffForcedOnSettings.OpsiHazard1LevelingYellowCoinLimit.help"
-    }
-  },
+
   "Oil": {
     "_info": {
       "name": "Oil._info.name",

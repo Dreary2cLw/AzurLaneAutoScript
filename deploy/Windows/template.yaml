@@ -1,9 +1,9 @@
 Deploy:
   Git:
     # URL of AzurLaneAutoScript repository
-    # [CN user] Use 'git://git.lyoko.io/AzurLaneAutoScript' for faster and more stable download
-    # [Other] Use 'https://github.com/LmeSzinc/AzurLaneAutoScript'
-    Repository: 'https://github.com/LmeSzinc/AzurLaneAutoScript'
+    # [CN user] Use 'cn' to get update from git-over-cdn service
+    # [Other] Use 'global' to get update from https://github.com/LmeSzinc/StarRailCopilot
+    Repository: 'global'
     # Branch of Alas
     # [Developer] Use 'dev', 'app', etc, to try new features
     # [Other] Use 'master', the stable branch
@@ -135,6 +135,7 @@ Deploy:
     # 'en-US' for English
     # 'ja-JP' for Japanese
     # 'zh-TW' for Chinese traditional
+    # 'es-ES' for Spanish
     Language: en-US
     # Theme of web ui
     # 'default' for light theme
