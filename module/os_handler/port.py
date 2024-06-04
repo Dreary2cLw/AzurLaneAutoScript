@@ -129,7 +129,7 @@ class PortHandler(OSShopHandler):
 
             # PORT_DOCK_CHECK is button to repair all.
             if self.appear_then_click(PORT_DOCK_CHECK, offset=(20, 20), interval=2):
-                time.sleep(3)  # Wait for 3 seconds before attempting to handle the popup
+                time.sleep(3)
                 continue
             if self.handle_popup_confirm('DOCK_REPAIR'):
                 repaired = True
