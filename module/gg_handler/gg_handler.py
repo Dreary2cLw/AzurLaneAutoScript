@@ -127,11 +127,6 @@ class GGHandler:
         gg_enable = gg_data['gg_enable']
         if gg_enable:
             GGData(config=self.config).set_data(target='gg_on', value=False)
-            logger.info(f'GG status:')
-            logger.info(
-                f'Enabled={gg_data["gg_enable"]} AutoRestart={gg_data["gg_auto"]} Current stage={gg_data["gg_on"]}')
-            if not self.skip_error():
-                logger.hr('Assume game died without GG panel')
 
     def gg_reset(self):
         """
@@ -139,9 +134,7 @@ class GGHandler:
         """
         gg_data = GGData(self.config).get_data()
         if gg_data['gg_enable'] and gg_data['gg_on']:
-            logger.hr('Disabling GG')
             self.restart()
-            logger.attr('GG', 'Disabled')
 
     def check_status(self, mode=True):
         """
@@ -154,9 +147,6 @@ class GGHandler:
             gg_auto = mode if deep_get(d=self.config.data,
                                        keys='GameManager.GGHandler.AutoRestartGG',
                                        default=False) else False
-            logger.info(f'Check GG status:')
-            logger.info(
-                f'Enabled={gg_data["gg_enable"]} AutoRestart={gg_data["gg_auto"]} Current stage={gg_data["gg_on"]}')
             if gg_auto:
                 if not gg_data['gg_on']:
                     self.set(True)
@@ -176,7 +166,7 @@ class GGHandler:
         OCR_CHECK = Digit(OCR_PRE_BATTLE_CHECK, letter=(255, 255, 255), threshold=128)
         ocr = OCR_CHECK.ocr(self.device.image)
         from module.config.utils import deep_get
-        limit = deep_get(self.config.data, keys=f'GameManager.PowerLimit.{task}', default=18000)
+        limit = deep_get(self.config.data, keys=f'GameManager.PowerLimit.{task}', default=21000)
         #logger.attr('Power Limit', limit)
         if ocr >= limit:
             #logger.critical('There''s high chance that GG is on, restart to disable it')

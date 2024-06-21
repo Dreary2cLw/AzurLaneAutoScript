@@ -454,9 +454,9 @@ class GeneratedConfig:
     GGHandler_DisabledTask = 'disable_all_dangerous_task'  # disable_all_dangerous_task, disable_guild_and_dangerous, disable_exercise, enable_all
 
     # Group `PowerLimit`
-    PowerLimit_Exercise = 16500
-    PowerLimit_Raid = 16500
-    PowerLimit_Ash = 16500
+    PowerLimit_Exercise = 21500
+    PowerLimit_Raid = 21500
+    PowerLimit_Ash = 21500
 
     # Group `InfiniteDelay`
     InfiniteDelay_Commission = False
