@@ -1725,11 +1725,11 @@
         "display": "hide",
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -2060,11 +2060,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -2510,11 +2510,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -4369,11 +4369,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -4836,11 +4836,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -5303,11 +5303,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -5770,11 +5770,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -6227,11 +6227,11 @@
         ],
         "option_bold": [
           "event_20211229_cn",
-          "event_20220428_cn"
+          "event_20220526_cn"
         ],
-        "cn": "event_20220428_cn",
-        "en": "event_20220428_cn",
-        "jp": "event_20220428_cn",
+        "cn": "event_20220526_cn",
+        "en": "event_20220526_cn",
+        "jp": "event_20220526_cn",
         "tw": "event_20211229_cn"
       },
       "Mode": {
@@ -8565,17 +8565,21 @@
       }
     },
     "Mail": {
-      "Collect": {
+      "ClaimMerit": {
         "type": "checkbox",
         "value": true
       },
-      "Filter": {
-        "type": "textarea",
-        "value": "Merit > Coolant"
-      },
-      "Delete": {
+      "ClaimMaintenance": {
         "type": "checkbox",
         "value": false
+      },
+      "ClaimTradeLicense": {
+        "type": "checkbox",
+        "value": false
+      },
+      "DeleteCollected": {
+        "type": "checkbox",
+        "value": true
       }
     },
     "SupplyPack": {
